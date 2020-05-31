@@ -1,0 +1,47 @@
+state	 symbol	 input	 action
+0	$	i**i$	Shift to state 7
+07	$i	**i$	Reduce by production 10
+05	$D	**i$	Reduce by production 8
+04	$C	**i$	Reduce by production 6
+03	$B	**i$	Shift to state 10
+语法错误不符合SLR(1)文法
+-----------------------------------------
+state	 symbol	 input	 action
+0	$	i+i-i*(i/i)$	Shift to state 7
+07	$i	+i-i*(i/i)$	Reduce by production 10
+05	$D	+i-i*(i/i)$	Reduce by production 8
+04	$C	+i-i*(i/i)$	Reduce by production 6
+03	$B	+i-i*(i/i)$	Reduce by production 4
+02	$A	+i-i*(i/i)$	Reduce by production 2
+01	$E	+i-i*(i/i)$	Shift to state 8
+018	$E+	i-i*(i/i)$	Shift to state 7
+0187	$E+i	-i*(i/i)$	Reduce by production 10
+0185	$E+D	-i*(i/i)$	Reduce by production 8
+0184	$E+C	-i*(i/i)$	Reduce by production 6
+0183	$E+B	-i*(i/i)$	Reduce by production 4
+01813	$E+A	-i*(i/i)$	Shift to state 9
+018139	$E+A-	i*(i/i)$	Shift to state 7
+0181397	$E+A-i	*(i/i)$	Reduce by production 10
+0181395	$E+A-D	*(i/i)$	Reduce by production 8
+0181394	$E+A-C	*(i/i)$	Reduce by production 6
+01813914	$E+A-B	*(i/i)$	Shift to state 10
+0181391410	$E+A-B*	(i/i)$	Shift to state 6
+01813914106	$E+A-B*(	i/i)$	Shift to state 7
+018139141067	$E+A-B*(i	/i)$	Reduce by production 10
+018139141065	$E+A-B*(D	/i)$	Reduce by production 8
+018139141064	$E+A-B*(C	/i)$	Shift to state 11
+01813914106411	$E+A-B*(C/	i)$	Shift to state 7
+018139141064117	$E+A-B*(C/i	)$	Reduce by production 10
+0181391410641116	$E+A-B*(C/D	)$	Reduce by production 7
+018139141064	$E+A-B*(C	)$	Reduce by production 6
+018139141063	$E+A-B*(B	)$	Reduce by production 4
+018139141062	$E+A-B*(A	)$	Reduce by production 2
+0181391410612	$E+A-B*(E	)$	Shift to state 17
+018139141061217	$E+A-B*(E)	$	Reduce by production 9
+01813914105	$E+A-B*D	$	Reduce by production 8
+018139141015	$E+A-B*C	$	Reduce by production 5
+01813914	$E+A-B	$	Reduce by production 3
+01813	$E+A	$	Reduce by production 1
+01	$E	$	accept
+语法正确，表达式符合SLR(1)文法
+-----------------------------------------
