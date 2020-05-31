@@ -9,13 +9,15 @@ categories: ["环境搭建","博客搭建"]
 
 1. latex是markdown的扩展语法，必须要打开内联公式。首先，打开偏好设置。
 
-![](../images/20200428/01.png)
+![](/images/20200428/01.png)
 
 2.  选择内联公式
 
-<img src="../images/20200428/02.png" alt="" style="zoom:60%;" />
+<img src="/images/20200428/02.png" alt="" style="zoom:60%;" />
 
 3.  然后重启Typora
+
+<!--more-->
 
 ## google浏览器不能正常显示
 

@@ -21,6 +21,8 @@ node -v
 npm -v
 ```
 
+<!--more-->
+
 ## 3 GitHub新建一个仓库
 
 名字：username.github.io
