@@ -3,12 +3,14 @@ title: HCL三层交换机配置路由
 toc: true
 date: 2020-05-22 21:29:56
 tags:
-categories:
+categories: 组网技术
 ---
 
 
 
 开启交换机三层功能,配置合适的路由实现PC1能够ping通PC2，拓扑结构如下图所示
+
+<!--more-->
 
 ![](/images/20200522/1.png)
 

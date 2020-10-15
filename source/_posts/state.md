@@ -3,7 +3,7 @@ title: Unit 01
 toc: true
 date: 2020-05-16 10:28:03
 tags:
-categories: 英语单词
+categories: 其他
 ---
 
 ## <font color=red>state</font>
@@ -20,7 +20,7 @@ A[state n.] -->B(statute)
 
 
 
-
+<!--more-->
 
 
 

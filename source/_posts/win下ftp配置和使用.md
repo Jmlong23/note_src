@@ -12,6 +12,12 @@ categories: ["环境搭建","ftp配置"]
 链接：https://pan.baidu.com/s/1zY8vnCJvPBFycvZwV1L-pA 
 提取码：kvhn
 
+
+
+**关于首次打开显示试用界面，点击输入代码按钮即可永久使用**
+
+
+
 解压缩后打开flashfxp.exe如下图所示：
 
 ![](/images/20200501/1.png)
@@ -21,6 +27,10 @@ categories: ["环境搭建","ftp配置"]
 ![](/images/20200501/2.png)
 
 然后就可以进入服务器的文件夹。就可以传输文件了。
+
+
+
+
 
 <!--more-->
 
