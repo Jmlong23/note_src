@@ -68,6 +68,10 @@ deploy:
 
 <https://github.com/printempw/hexo-hide-posts>
 
+加上：
+
+hidden: true
+
 
 
 ## icarus文章布局换成两行

@@ -207,6 +207,81 @@ void main() {
 }
 ```
 
+# 调用网融公司包来签名验证的代码
+
+```
+#include <iostream>
+#include<pkiapi.h>
+#include<pkiapp.h>
+using namespace std;
+
+void main() {
+	if (!pkiInit()) {
+		cout << "succeed\n";
+	}
+	else
+	{
+		cout << "error\n";
+	}
+
+
+	BYTE* label = (unsigned char*)"360200265999946.p.3602";
+	LABEL_TYPE type = LBL_CERT;
+	BYTE* buf;
+	int size;
+	if (!pkiReadLabel(label, type, NULL, &size)) {
+		cout << "succeed\n";
+		
+	}
+	else
+	{
+		cout << "error\n";
+	}
+
+
+	BYTE* i_keyLabel = (unsigned char*)"76f960a61de69924d5f280d687d94ea84bffb951";
+	BYTE* i_keyPasswd = (unsigned char*)"123456";
+	ALG_ID digestAlgo = 32780;
+	PKI_DATA i_inData;
+	i_inData.size = 3;
+	i_inData.value = (unsigned char*)"abc";
+	/// <summary>
+	//分配内存
+	/// </summary>
+	PKI_DATA* signature = (PKI_DATA*)malloc(1000);
+	/*PKI_DATA signature;
+	signature.size = 300;
+	signature.value = (BYTE*)malloc(signature.size);*/
+
+	//cout<<pkiSignData(i_keyLabel, i_keyPasswd, i_inData, signature)<<endl;
+	cout << pkiGetSignature(i_keyLabel, i_keyPasswd, digestAlgo, i_inData, signature) << endl;
+	if (!pkiGetSignature(i_keyLabel, i_keyPasswd, digestAlgo, i_inData, signature)) {
+		cout << "succeed\n";
+	}
+	else
+	{
+		cout << "error\n";
+	}
+
+	/*if (!pkiVerifySignature(NULL, i_inData, *signature)) {
+		cout << "succeed\n";
+	}
+	else
+	{
+		cout << "error\n";
+	}*/
+	if (!pkiEnd()) {
+		cout << "succeed\n";
+	}
+	else
+	{
+		cout << "error\n";
+	}
+}
+```
+
+
+
 代码4
 
 ```

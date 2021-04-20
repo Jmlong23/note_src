@@ -6,9 +6,19 @@ tags:
 categories: windows窗口程序
 ---
 
+学习资料：
+
+https://docs.microsoft.com/zh-cn/cpp/mfc/mfc-desktop-applications?view=msvc-160
+
+http://c.biancheng.net/cpp/mfc/
+
+网融解析证书项目：https://github.com/Jmlong23/signVerifyWithCSP
+
+无法解析的错误，看csp那篇博客
+
 # 第一个程序
 
-打开vs-》新建-》Windows桌面想到-》桌面程序-》空项目
+打开vs-》新建-》Windows桌面向导-》桌面程序-》空项目
 
 <https://blog.csdn.net/hyman_c/article/details/53057037>
 
